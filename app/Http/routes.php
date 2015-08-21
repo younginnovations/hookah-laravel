@@ -12,8 +12,10 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+Route::get('/about', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
+Route::get('logged-in', 'HomeController@loggedIn');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

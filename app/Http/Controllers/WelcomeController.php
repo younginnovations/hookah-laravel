@@ -33,4 +33,14 @@ class WelcomeController extends Controller {
 		return view('welcome');
 	}
 
+	/**
+	 * To render the about us page.
+	 *
+	 * @return mixed
+	 */
+	public function about()
+	{
+		return view('about');
+	}
+
 }
