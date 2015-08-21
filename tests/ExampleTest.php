@@ -1,5 +1,7 @@
 <?php
 
+namespace Test;
+
 class ExampleTest extends TestCase {
 
 	/**
