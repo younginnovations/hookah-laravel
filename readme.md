@@ -28,6 +28,7 @@ line 12 for back end tests for logged in users.
 ```
  protected $baseUrl = 'http://laravel5-geshan.rhcloud.com/';
 ```
+You can test the changes in local/development or your staging/live environment too by changing the above URL.
 
 * Then change the following as per need in `ApplicationUserSmokeTestCase`, we assume the variables are descriptive enough :)
 
