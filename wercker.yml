@@ -6,7 +6,7 @@ build:
   steps:
     - script:
         name: install dependencies
-        code: composer install --no-interaction
+        code: composer install --no-interaction --prefer-source
     - script:
         name: PHPUnit tests
         code: ./vendor/bin/paratest -f --colors -m 2 -p 4 tests
