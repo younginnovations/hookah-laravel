@@ -1,6 +1,4 @@
-box: 
-  id: geshan/php-composer-alpine
-  cmd: /bin/sh
+box: boedy/wercker-php
 
 build:
   steps:
