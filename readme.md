@@ -2,6 +2,8 @@
 
 This is an example [hookah](https://github.com/younginnovations/hookah) integration with laravel app.
 
+![hookah-laravel](https://cloud.githubusercontent.com/assets/170554/10563745/749d7196-75a7-11e5-826c-fd995315fcdf.jpg)
+
 You can directly apply this [patch](https://patch-diff.githubusercontent.com/raw/younginnovations/hookah-laravel/pull/1.patch) 
 file if its easy or just copy the `tests\Smoke` folder and adapt it to your application.
 
