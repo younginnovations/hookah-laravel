@@ -1,0 +1,13 @@
+box: alanbem/wercker-php
+
+build:
+  steps:
+    - script:
+        name: composer cache
+        code: export COMPOSER_CACHE_DIR="$WERCKER_CACHE_DIR/composer" && mkdir -p $COMPOSER_CACHE_DIR
+    - script:
+        name: install dependencies
+        code: composer install --no-interaction --prefer-source
+    - script:
+        name: PHPUnit tests
+        code: ./vendor/bin/paratest -f --colors -m 2 -p 4 tests
