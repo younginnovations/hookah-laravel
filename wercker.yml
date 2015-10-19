@@ -1,4 +1,4 @@
-box: alanbem/wercker-php
+box: geshan/laravel-alpine
 
 build:
   steps:
