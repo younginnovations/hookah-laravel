@@ -94,6 +94,6 @@ like `ResourceContractsSmokeTestCase` and `ResourceContractsUserSmokeTestCase`.
             ['.git', 404],
         ];
 ```
-* Run your tests with `/vendor/bin/phpunit` they should be fine like below:
+* Run your tests with `/vendor/bin/phpunit` they should be fine like below :
 
 ![Hookah Laravel Integration](https://s3-ap-southeast-1.amazonaws.com/uploads-ap.hipchat.com/140261/1343070/kLcC18NyB54yWTO/hookah-laravel-5.png "Hookah Laravel Integration")
