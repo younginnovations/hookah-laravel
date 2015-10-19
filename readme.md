@@ -8,6 +8,8 @@ This is an example [hookah](https://github.com/younginnovations/hookah) integrat
 
 [![wercker status](https://app.wercker.com/status/89ba09c2ac06307108ee6ef3a6800dc0/m/master "wercker status")](https://app.wercker.com/project/bykey/89ba09c2ac06307108ee6ef3a6800dc0)
 
+## Patch
+
 You can directly apply this [patch](https://patch-diff.githubusercontent.com/raw/younginnovations/hookah-laravel/pull/1.patch) 
 file if its easy or just copy the `tests\Smoke` folder and adapt it to your application.
 
