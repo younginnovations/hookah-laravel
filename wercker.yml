@@ -1,4 +1,6 @@
-box: geshan/laravel-alpine
+box: 
+  id: geshan/laravel-alpine
+  cmd: /bin/sh
 
 build:
   steps:
