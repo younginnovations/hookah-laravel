@@ -19,4 +19,4 @@ build:
         code: cp -af vendor $COMPOSER_CACHE_DIR
     - script:
         name: PHPUnit tests
-        code: ./vendor/bin/paratest -f --colors -m 2 -p 4 tests
+        code: ls -al vendor/bin && ./vendor/bin/paratest -f --colors -m 2 -p 4 tests
