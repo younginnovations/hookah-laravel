@@ -10,13 +10,16 @@ build:
     - script:
         name: copy vendor from cache
         code: |
-              [ -d $COMPOSER_CACHE_DIR/vendor ] && cp -af $COMPOSER_CACHE_DIR/vendor vendor || echo 'Cached vendor not found'
+              [ -d $COMPOSER_CACHE_DIR/vendor ] && cp -Rf $COMPOSER_CACHE_DIR/vendor vendor || echo 'Cached vendor not found'
     - script:
         name: install dependencies
         code: composer install --no-interaction --prefer-source
     - script:
         name: copy vendor to cache
-        code: cp -af vendor $COMPOSER_CACHE_DIR
+        code: cp -Rf vendor $COMPOSER_CACHE_DIR
+    - script:
+        name: fix sym links
+        code: ln -sf vendor/phpunit/phpunit/phpunit vendor/bin/phpunit && ln -sf vendor/brianium/paratest/bin/paratest vendor/bin/paratest
     - script:
         name: PHPUnit tests
         code: ls -al vendor/bin && ./vendor/bin/paratest -f --colors -m 2 -p 4 tests
