@@ -22,4 +22,4 @@ build:
         code: ln -sf ../phpunit/phpunit/phpunit vendor/bin/phpunit && ln -sf ../brianium/paratest/bin/paratest vendor/bin/paratest
     - script:
         name: PHPUnit tests
-        code: ls -al vendor/bin && ./vendor/bin/paratest -f --colors -m 2 -p 4 tests
+        code: ./vendor/bin/paratest -f --colors -m 2 -p 4 tests
