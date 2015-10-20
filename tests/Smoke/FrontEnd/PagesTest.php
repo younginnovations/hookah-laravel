@@ -15,7 +15,7 @@ class PagesTest extends ApplicationSmokeTestCase
     {
         return [
             [$this->baseUrl, 200],
-            ['about', 400],
+            ['about', 200],
             ['auth/login', 200],
             ['auth/register', 200],
             ['not-existing', 404],
