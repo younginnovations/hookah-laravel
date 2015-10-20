@@ -6,6 +6,8 @@ This is an example [hookah](https://github.com/younginnovations/hookah) integrat
 
 ## Build Status
 
+Composer dependencies are cached on wercker.
+
 [![wercker status](https://app.wercker.com/status/89ba09c2ac06307108ee6ef3a6800dc0/m/master "wercker status")](https://app.wercker.com/project/bykey/89ba09c2ac06307108ee6ef3a6800dc0)
 
 ## Patch
