@@ -8,6 +8,10 @@ build:
         name: cache composer dependencies
         code: export COMPOSER_CACHE_DIR="$WERCKER_CACHE_DIR/composer" && mkdir -p $COMPOSER_CACHE_DIR
     - script:
+        name: copy vendor from cache
+        code: |
+              [ -d $COMPOSER_CACHE_DIR/vendor ] && cp -Rf $COMPOSER_CACHE_DIR/vendor vendor || echo 'Cached vendor not found'
+    - script:
         name: install dependencies
         code: composer install --no-interaction --prefer-source
     - script:
@@ -15,4 +19,4 @@ build:
         code: cp -Rf vendor $COMPOSER_CACHE_DIR
     - script:
         name: PHPUnit tests
-        code: ./vendor/bin/paratest -f --colors -m 2 -p 4 tests
+        code: ls -al vendor/bin && ./vendor/bin/paratest -f --colors -m 2 -p 4 tests
